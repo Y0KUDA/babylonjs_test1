@@ -41,7 +41,7 @@ var createScene = function() {
   );
 
   // Move the sphere upward 1/2 of its height.
-  sphere.position.y = 1;
+  sphere.position.y = 2;
 
   // Create a built-in "ground" shape.
   var ground = BABYLON.MeshBuilder.CreateGround(
@@ -50,7 +50,7 @@ var createScene = function() {
     scene
   );
 
-  let loader = BABYLON.SceneLoader.Append("./rsc/model/", "man.gltf", scene);
+  let loader = BABYLON.SceneLoader.Append("./rsc/model/", "Anime_character.gltf", scene);
 
   // Return the created scene.
   return scene;
